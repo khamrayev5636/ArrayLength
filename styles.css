@@ -1,0 +1,36 @@
+.list-js {
+    padding-left: 0;
+    list-style: none;
+}
+
+.item-js {
+    display: inline-block;
+    max-width: 350px;
+    width: 100%;
+    overflow: hidden;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #209651;
+    border-radius: 20px;
+}
+
+.add-js {
+    border: none;
+    outline: none;
+    background-color: aqua;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.remove-js {
+    border: none;
+    outline: none;
+    background-color: red;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+}
