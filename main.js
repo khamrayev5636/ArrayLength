@@ -10,7 +10,7 @@ elForm.addEventListener("submit" , function(evt){
     elText.classList.add("list-js")
     
     const obj = {
-        number : "",
+        number : array.length + 1,
         elInputValue : elInput.value,
     };
     
@@ -24,7 +24,6 @@ elForm.addEventListener("submit" , function(evt){
         const newItem = document.createElement("li");
         newItem.classList.add("item-js" , "shadow-lg");
 
-        array[i].number = i + 1;
 
         const newNumber = document.createElement("span");
         newNumber.textContent = array[i].number + ".";
@@ -54,13 +53,6 @@ elForm.addEventListener("submit" , function(evt){
         newItem.appendChild(newBox)
 
         elText.appendChild(newItem);
-        
-        newRemove.addEventListener("click" , function(){
-    
-            newItem.classList.add("d-none");
-            array.length = 0;
-    
-        })
     }
 
 })
